@@ -1,0 +1,14 @@
+/** Bookmarks Toolbar Styles **/
+/** ----------------------- **/
+/* Create breathing room for the bookmarks in the bookmarks toolbar. */
+#PersonalToolbar toolbarbutton.bookmark-item:not(.subviewbutton) { 
+  padding-block: 8px !important; 
+  }
+#PersonalToolbar > :first-child {
+  padding-inline-start: 8vw;
+}
+#PersonalToolbar > :last-child {
+  padding-inline-end: 25vw;
+}
+
+/*
