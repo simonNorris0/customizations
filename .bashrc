@@ -10,7 +10,8 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
-export PATH=$PATH:$HOME/Arduino/bin
+#export PATH=$PATH:$HOME/code/arduino/bin #arduino-cli
+#export PATH=$PATH:$HOME/bin/jgrasp206_19/jgrasp/bin
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
@@ -19,7 +20,7 @@ export PATH=$PATH:$HOME/Arduino/bin
 alias rm="rm -i" # be safe
 alias ll="ls --group-directories-first --color=always -Glav"
 alias ls="ls --group-directories-first --color=always -Gv"
-alias okular="flatpak run okular"
+#alias ncspot="flatpak run io.github.hrkfdn.ncspot"
 
 
 if [ -d ~/.bashrc.d ]; then
@@ -29,8 +30,8 @@ if [ -d ~/.bashrc.d ]; then
         fi
     done
 fi
-
-umask 022
+#umask 077 #no read privileges for others, fedora does not like this
+umask 022  #full read privileges for others
 
 cal
 
