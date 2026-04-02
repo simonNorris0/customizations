@@ -4,6 +4,8 @@ set number
 syntax on
 " Set colorscheme to _____
 colorscheme darkblue
+" show line and column number of cursor position on status bar
+set ruler
 
 filetype plugin indent on
 " show existing tab with 2 spaces width
